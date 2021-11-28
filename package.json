@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "./pre.sh"
+    "preinstall": "./pre.sh template"
   },
   "repository": {
     "type": "git",
