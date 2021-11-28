@@ -1,0 +1,15 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "./pre.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codermakhackerone"
+  },
+  "author": "",
+  "license": "ISC"
+}
